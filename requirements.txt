@@ -1,0 +1,8 @@
+requests
+Pillow
+
+pytelegrambotapi
+
+django
+django-preferences
+django-modeladmin-reorder

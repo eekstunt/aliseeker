@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ site_title|default:_('Bot admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Bot administration') }}</a></h1>
+{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% load tickets %}
+
+{% block nav-global %}
+    {% autoescape off %}{% unread_messages %}{% endautoescape %}
+{% endblock %}
+

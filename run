@@ -1,0 +1,6 @@
+cd /home/regular/aliseeker
+
+nohup ./virtualenv/bin/python sender.py &
+nohup ./virtualenv/bin/python checker.py &
+
+pwd
